@@ -90,17 +90,16 @@ body:has(#enable-section-numbers) {
 }
 
 .logo-carousel-track {
-  --logo-gap: 48px;
   display: flex;
   align-items: center;
   width: max-content;
-  gap: var(--logo-gap);
+  gap: 3rem;
   will-change: transform;
 }
 
 @keyframes logo-scroll {
   from { transform: translateX(0); }
-  to { transform: translateX(calc(-50% - var(--logo-gap) / 2)); }
+  to { transform: translateX(calc(-50% - 1.5rem)); }
 }
 
 @media (prefers-reduced-motion: reduce) {
